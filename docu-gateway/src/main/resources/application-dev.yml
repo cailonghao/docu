@@ -1,0 +1,25 @@
+server:
+  port: 15000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  level:
+    #feign日志以什么级别监控哪个接口
+    com.atguigu.springcloud.service.PaymentFeignService: debug
+#spring:
+#  redis:
+#    host: 81.71.36.134
+#    port: 6379
+#    password:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: auth
+#          uri: lb://docu-auth-service
+#          predicates:
+#            - Path=/auth/**
+#          filters:
+#            - StripPrefix=1

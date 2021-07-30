@@ -1,0 +1,31 @@
+server:
+  port: 16000
+spring:
+  redis:
+    host: 81.71.36.134
+    port: 6379
+    password:
+  application:
+    name: docu-auth-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://81.71.36.134:8848
+        namespace: 4c6ccf95-2314-449e-a61a-955538605295
+        cluster-name: DEFAULT
+    sentinel:
+      transport:
+        dashboard: http://81.71.36.134:20000
+        heartbeat-interval-ms: 500
+        port: 8719
+        client-ip: 81.71.36.134
+      eager: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+

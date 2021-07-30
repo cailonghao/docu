@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: docu-gateway-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://81.71.36.134:8848
+        namespace: 4c6ccf95-2314-449e-a61a-955538605295
+        cluster-name: DEFAULT
+      config:
+        server-addr: http://81.71.36.134:8848
+        file-extension: yaml
+        namespace: 4c6ccf95-2314-449e-a61a-955538605295
+        cluster-name: DEFAULT

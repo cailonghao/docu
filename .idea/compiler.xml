@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth-client" />
+        <module name="member-client" />
+        <module name="member-open" />
+        <module name="gateway-client" />
+        <module name="docu-config" />
+        <module name="member-provider" />
+        <module name="member-api" />
+        <module name="docu-auth" />
+        <module name="docu-gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-client" options="-parameters" />
+      <module name="docu" options="-parameters" />
+      <module name="docu-auth" options="-parameters" />
+      <module name="docu-client" options="-parameters" />
+      <module name="docu-config" options="-parameters" />
+      <module name="docu-gateway" options="-parameters" />
+      <module name="docu-member" options="-parameters" />
+      <module name="gateway-client" options="-parameters" />
+      <module name="member-api" options="-parameters" />
+      <module name="member-client" options="-parameters" />
+      <module name="member-open" options="-parameters" />
+      <module name="member-provider" options="-parameters" />
+    </option>
+  </component>
+</project>
