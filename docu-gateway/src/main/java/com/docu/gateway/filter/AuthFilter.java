@@ -22,9 +22,7 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 认证管理器
@@ -33,12 +31,16 @@ import java.util.Map;
 @Slf4j
 public class AuthFilter implements GlobalFilter, Ordered {
 
+    public static List<String> NO_CHECK_URL = Arrays.asList("/index/register","/index/login");
+
     @SneakyThrows
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         String uri = exchange.getRequest().getPath().pathWithinApplication().value();
-        System.out.println(uri);
         if (uri.startsWith(GatewayConstant.AUTH)) {
+            return chain.filter(exchange);
+        }
+        if(NO_CHECK_URL.contains(uri)){
             return chain.filter(exchange);
         }
         ServerHttpRequest request = exchange.getRequest();

@@ -1,2 +1,10 @@
+H:\20200312springcloud\docu\docu-auth\src\main\java\com\docu\auth\service\impl\RedisServiceImpl.java
+H:\20200312springcloud\docu\docu-auth\src\main\java\com\docu\auth\util\SecretUtil.java
 H:\20200312springcloud\docu\docu-auth\src\main\java\com\docu\auth\DocuAuthApplication.java
+H:\20200312springcloud\docu\docu-auth\src\main\java\com\docu\auth\service\DocuUserDetailService.java
+H:\20200312springcloud\docu\docu-auth\src\main\java\com\docu\auth\config\SecurityConfig.java
+H:\20200312springcloud\docu\docu-auth\src\main\java\com\docu\auth\service\JwtTokenEnhancer.java
+H:\20200312springcloud\docu\docu-auth\src\main\java\com\docu\auth\service\RedisService.java
+H:\20200312springcloud\docu\docu-auth\src\main\java\com\docu\auth\config\Oauth2Config.java
+H:\20200312springcloud\docu\docu-auth\src\main\java\com\docu\auth\constant\AuthConstant.java
 H:\20200312springcloud\docu\docu-auth\src\main\java\com\docu\auth\controller\IndexController.java

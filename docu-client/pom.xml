@@ -14,7 +14,6 @@
     <modules>
         <module>auth-client</module>
         <module>gateway-client</module>
-        <module>member-client</module>
     </modules>
 
 

@@ -8,4 +8,6 @@ public interface MemberService {
     Member addMember(Member member);
 
     Member selMember(Long id);
+
+    Member selMemberByName(String name);
 }
