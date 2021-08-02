@@ -50,9 +50,11 @@ public class IndexController {
 
 
     @RequestMapping("/login")
-    public Member login(String username, @RequestHeader(name = "Token", required = true) String token) {
+    public Member login(String username, @RequestHeader(name = "token", required = true) String token) {
         log.info("token = {}", token);
-        return memberService.selMemberByName(username);
+        Member member = memberService.selMemberByName(username);
+        System.out.println(member);
+        return member;
     }
 
 

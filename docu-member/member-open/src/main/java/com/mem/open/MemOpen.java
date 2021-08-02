@@ -12,5 +12,5 @@ import org.springframework.web.bind.annotation.RequestHeader;
 public interface MemOpen {
 
     @PostMapping("/index/login")
-    Member login(String username, @RequestHeader(name = "Token",required = true) String token);
+    Member login(String username, @RequestHeader(name = "token") String token);
 }
